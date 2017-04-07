@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url("reset.css");
+.container,
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 0.16rem; }
+
+.container {
+  銆€銆€銆€display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  銆€銆€銆€-webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .container .header {
+    height: 44px;
+    銆€銆€銆€display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    銆€銆€銆€-webkit-align-content: center;
+    -moz-align-content: center;
+    -ms-align-content: center;
+    align-content: center; }
+    .container .header form {
+      width: 100%;
+      height: 80%;
+      padding: 0 10px;
+      box-sizing: border-box;
+      銆€銆€銆€display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: flex;
+      銆€銆€銆€-webkit-align-content: center;
+      -moz-align-content: center;
+      -ms-align-content: center;
+      align-content: center; }
+      .container .header form .txt {
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+      .container .header form .search {
+        width: 20%; }
+  .container .section {
+    -webkit-box-sizing: border-box;
+    padding: 10px;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    銆€銆€銆€display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    銆€銆€銆€-webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .container .section .views_list {
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      overflow-y: auto; }
+      .container .section .views_list li {
+        margin-top: .1rem;
+        background: #eee; }
+        .container .section .views_list li h4 {
+          line-height: 0.24rem;
+          height: 0.24rem;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+        .container .section .views_list li p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden; }
+        .container .section .views_list li .font {
+          color: red; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Search</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<form action="">
+				<input type="text" placeholder="请输入关键字" id="txt" class="txt"/><input type="button" value="搜索" id="search" class="search"/>
+			</form>
+		</header>
+		<section class="section">
+			<ul class="views_list" id="views">
+			</ul>
+		</section>
+	</div>
+	<script src="./js/search.js"></script>
+	<script>
+		window.onload=function(){
+			new FuzzyMatching("txt","search","views","./data/data.json","Get");
+			//FuzzyMatching(输入框,搜索按钮,渲染数据的视图,请求路径,请求方式 ).font为高亮颜色
+		}
+	</script>
+</body>
+</html>
